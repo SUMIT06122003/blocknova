@@ -11,8 +11,7 @@ export default function NFT() {
   const [nfts, setNfts] = useState([]);
   const [loading, setLoading] = useState(false);
 
-  // 🔥 PASTE A FRESH JWT (old one is compromised)
-  const PINATA_JWT = "PASTE_NEW_JWT_HERE";
+  const PINATA_JWT = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySW5mb3JtYXRpb24iOnsiaWQiOiIxNWFlOTkwMC00YzFlLTRmODQtOWM1NC00MjVmNjI5ODc1ODQiLCJlbWFpbCI6ImN1c3RvbXhmb3VuZGVyQGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJwaW5fcG9saWN5Ijp7InJlZ2lvbnMiOlt7ImRlc2lyZWRSZXBsaWNhdGlvbkNvdW50IjoxLCJpZCI6IkZSQTEifSx7ImRlc2lyZWRSZXBsaWNhdGlvbkNvdW50IjoxLCJpZCI6Ik5ZQzEifV0sInZlcnNpb24iOjF9LCJtZmFfZW5hYmxlZCI6ZmFsc2UsInN0YXR1cyI6IkFDVElWRSJ9LCJhdXRoZW50aWNhdGlvblR5cGUiOiJzY29wZWRLZXkiLCJzY29wZWRLZXlLZXkiOiI0N2EzZWE5MGZkMGQ0MWNhNDliZSIsInNjb3BlZEtleVNlY3JldCI6IjNjMTY5N2RhZDBmMTgyZDk5Y2ZkOWM0MWYxNWE1MGQ3MTk2MmFiMTI0MTA1ZGI2ZjZhMjUwNDg2NGZkZTBkMmMiLCJleHAiOjE4MDg1NzY2ODJ9.iTW9yAwXj41oiGP4Q8qDIQDX-KTh7IWbqnFrPvX3ZJE";
 
   const contractAddress = "0xd9145CCE52D386f254917e481eB44e9943F39138";
   const abi = [
@@ -29,7 +28,6 @@ export default function NFT() {
     setAccount(accounts[0]);
   };
 
-  // 📦 LOAD LOCAL NFTS (UI only)
   useEffect(() => {
     const stored = JSON.parse(localStorage.getItem("myNFTs")) || [];
     setNfts(stored);
