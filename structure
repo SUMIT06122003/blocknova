@@ -1,0 +1,44 @@
+blocknova/
+│
+├── public/
+│
+├── src/
+│
+│   ├── components/          # Reusable UI components
+│   │   ├── Navbar.js
+│   │   ├── Chart.js
+│   │   ├── TradePanel.js    # (future separation)
+│   │
+│   ├── pages/               # Main pages (routes)
+│   │   ├── Dashboard.js
+│   │   ├── Trade.js
+│   │   ├── Charts.js        # (future)
+│   │   ├── Algo.js          # (future)
+│   │   ├── NFT.js           # (future)
+│   │
+│   ├── services/            # Core logic layer
+│   │   ├── wallet.js        # MetaMask + signer
+│   │   ├── blockchain.js    # Smart contract interaction
+│   │   ├── trade.js         # Portfolio + trade logic
+│   │   ├── api.js           # Binance API
+│   │
+│   ├── contracts/           # Smart contract data
+│   │   ├── abi.js           # ABI definitions
+│   │   ├── config.js        # Contract address, network
+│   │
+│   ├── utils/               # Helper functions
+│   │   ├── ema.js           # EMA calculations
+│   │   ├── format.js        # number formatting
+│   │
+│   ├── styles/              # (optional later)
+│
+│   ├── App.js               # Routing + layout
+│   ├── index.js
+│
+├── contracts/               # Solidity contracts (backend)
+│   └── BlockNova.sol
+│
+├── package.json
+
+
+0x29B903778D3fc79d19a61D424f2e70136507d40f
